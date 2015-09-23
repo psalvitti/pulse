@@ -27,6 +27,7 @@
 							<span class="label">Uses HTTPS:</span>
 							<span class="setting">{{ domain.https['Uses HTTPS'] | field_map('https', 'https') }}</span>
 						</li>
+						{% if domain.https['Uses HTTPS'] | field_map('https', 'https') == 'Yes' %}
 						<li>
 							<span class="label">Enforces HTTPS:</span>
 							<span class="setting">{{ domain.https['Enforces HTTPS'] | field_map('https', 'https_forced') }}</span>
@@ -39,6 +40,7 @@
 							<span class="label">SSL Labs Grade:</span>
 							<span class="setting">{{ domain.https['SSL Labs Grade'] | field_map('https', 'grade') }}</span>
 						</li>
+						{% endif %}
 
 					</ul>
 
