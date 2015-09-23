@@ -18,7 +18,8 @@ var Utils = {
       return data;
     else
       return "" +
-        "<a href=\"" + row['Canonical'] + "\" target=\"blank\">" +
+        // "<a href=\"" + row['Canonical'] + "\" target=\"blank\">" +
+        "<a href=\"" + "../../domain/" + row['Domain'] + "\">" +
           data +
         "</a>";
   },
