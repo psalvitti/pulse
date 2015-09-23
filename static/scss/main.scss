@@ -152,9 +152,11 @@ a#skipnav {
 
           a {
             padding: 17px 24px;
+
+            &.active,
             &:hover {
-              color: $medium-blue;
-              background-color: white;
+                color: $medium-blue;
+                background-color: white;
             }
           }
         }

@@ -321,7 +321,7 @@ a#skipnav {
         display: inline; }
         .site-header > nav #main-nav ul li a {
           padding: 17px 24px; }
-          .site-header > nav #main-nav ul li a:hover {
+          .site-header > nav #main-nav ul li a.active, .site-header > nav #main-nav ul li a:hover {
             color: #0059b3;
             background-color: white; }
 .site-header #menu-btn {

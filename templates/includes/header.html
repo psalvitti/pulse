@@ -15,13 +15,13 @@
             </h1>
             <ul id="right-nav">
                 <li>
-                    <a href="/https/domains/">HTTPS</a>
+                    <a href="/https/domains/"{% if request.path == '/https/domains/' or request.path == '/https/agencies/' or request.path == '/https/guidance/' %} class="active"{% endif %}>HTTPS</a>
                 </li>
                 <li>
-                    <a href="/analytics/domains/">Analytics</a>
+                    <a href="/analytics/domains/"{% if request.path == '/analytics/domains/' or request.path == '/analytics/agencies/' or request.path == '/analytics/guidance/' %} class="active"{% endif %}>Analytics</a>
                 </li>
                 <li>
-                    <a href="/about/">About</a>
+                    <a href="/about/"{% if request.path == '/about/' %} class="active"{% endif %}>About</a>
                 </li>
                 <li>
                     <a href="https://github.com/18f/pulse/issues">Feedback</a>
@@ -29,7 +29,7 @@
             </ul>
             <a href="#" id="menu-btn">MENU</a>
         </div>
-        
+
     </nav>
 
     <nav id="menu-content">
