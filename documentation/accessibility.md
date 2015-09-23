@@ -15,6 +15,10 @@ Athough automated accessibility testing tools such as `pa11y` should likely not 
 
 For Pulse, `pa11y` will be checking .gov websites against the WCAG 2.0 AA Standard. This is the standard that the Access Board has signaled will become incorporated into Section 508 (see http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/preliminary-regulatory-impact-analysis). In the future, Pulse may scan against additional standards.
 
+### Eligibility
+
+[]
+
 ### Data Dictionary
 
 This is a brief explaination of the data fields returned by the `pa11y` via the HTML Code Sniffer.
@@ -47,3 +51,10 @@ This is a brief explaination of the data fields returned by the `pa11y` via the 
 - **"typeCode"** - Corresponds to "type"
  - 3 = notice, 2 = warning, 1 = error
 
+## Making sense of the results
+
+The quickest way to make sense of a `pa11y` report is to look at the aggregate counts of notices, warnings, and errors. We hypothesize that an errors will rarely be false negatives. That is to say, an error reported by `pa11y` is highly likely to correspond to an actual error.
+
+### Caveats
+
+[]
