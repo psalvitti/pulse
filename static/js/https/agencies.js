@@ -4,8 +4,6 @@ $(document).ready(function () {
     renderTable(data.data);
   });
 
-  alert('agencies')
-
   var renderTable = function(data) {
     $("table").DataTable({
       responsive: true,
