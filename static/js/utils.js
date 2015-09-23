@@ -24,6 +24,15 @@ var Utils = {
         "</a>";
   },
 
+  linkAgency: function(data) {
+    var url = data.toLowerCase().replace(/ /g,'-').replace(/[^\w-]+/g,'');
+
+    return "" +
+        "<a href=\"/../../agency/" + url + "\">" +
+          data +
+        "</a>";
+  },
+
   // used to make "71" say "71 domains" and link to filtered domains
   filterAgency: function(page) {
     return function(data, type, row) {

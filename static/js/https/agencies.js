@@ -4,6 +4,8 @@ $(document).ready(function () {
     renderTable(data.data);
   });
 
+  alert('agencies')
+
   var renderTable = function(data) {
     $("table").DataTable({
       responsive: true,
@@ -12,7 +14,10 @@ $(document).ready(function () {
       data: data,
 
       columns: [
-        {data: "Agency"},
+        {
+          data: "Agency",
+          render: Utils.linkAgency
+        },
         {
           data: "Number of Domains",
           render: Utils.filterAgency("https")
@@ -35,7 +40,7 @@ $(document).ready(function () {
           }
         },
         {
-          render: Utils.progressBar, 
+          render: Utils.progressBar,
           targets: [2,3,4,5],
         }
       ],

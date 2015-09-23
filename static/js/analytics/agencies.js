@@ -13,7 +13,10 @@ $(document).ready(function () {
       initComplete: Utils.searchLinks,
 
       columns: [
-        {data: "Agency"},
+        {
+          data: "Agency",
+          render: Utils.linkAgency
+        },
         {
           data: "Number of Domains",
           render: Utils.filterAgency("analytics")
@@ -33,7 +36,7 @@ $(document).ready(function () {
           }
         },
         {
-          render: Utils.progressBar, 
+          render: Utils.progressBar,
           targets: 2,
         }
       ],
