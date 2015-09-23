@@ -1,8 +1,10 @@
----
-layout: default
-id: pagenotfound
-permalink: /404/
----
+{% extends "base.html" %}
+
+{% block page_id %}not-found{% endblock %}
+{% block title %}404 - Page Not Found{% endblock %}
+{% block description %}Page Not Found{% endblock %}
+
+{% block content %}
 
 <section id="main-content">
   <h2>404</h2>
@@ -11,5 +13,4 @@ permalink: /404/
 
 </section>
 
-
-
+{% endblock %}
